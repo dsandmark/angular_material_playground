@@ -1,0 +1,20 @@
+<md-content>
+    <md-list>
+        <md-subheader class="md-no-sticky">
+            Series
+        </md-subheader>
+
+        <md-list-item class="md-2-line" ng-repeat="series in vm.series">
+            <ng-md-icon class="md-avatar"
+                        icon="local_movies"
+                        size="48">
+            </ng-md-icon>
+
+            <div class="md-list-item-text">
+                <h3>{{ series.name }}</h3>
+                <p>{{ series.originalRelease }}</p>
+            </div>
+        </md-list-item>
+
+    </md-list>
+</md-content>
